@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql-consultas
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: senha123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  mysql_data:
