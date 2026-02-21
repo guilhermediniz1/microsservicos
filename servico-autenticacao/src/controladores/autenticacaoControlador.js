@@ -38,7 +38,8 @@ const registrar = async (req, res) => {
       id: usuario.id,
       nome,
       email: usuario.email,
-      tipo: usuario.tipo
+      tipo: usuario.tipo,
+      novoCampo: 'a'
     });
   } catch (erro) {
     return res.status(500).json({ erro: 'Erro interno ao registrar usuário' });
