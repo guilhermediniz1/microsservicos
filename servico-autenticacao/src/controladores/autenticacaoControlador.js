@@ -12,7 +12,7 @@ const registrar = async (req, res) => {
 
   const tiposValidos = ['medico', 'paciente', 'admin'];
   if (!tiposValidos.includes(tipo)) {
-    return res.status(400).json({ erro: 'Tipo inválido. Use: medico, paciente ou admin' });
+    return res.status(400).json({ erro: 'Tipo inválido. Use: `medico`, `paciente` ou `admin`' });
   }
 
   try {
