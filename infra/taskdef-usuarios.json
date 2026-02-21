@@ -24,7 +24,8 @@
         { "name": "DB_NOME",     "value": "usuarios_db" },
         { "name": "DB_USUARIO",  "value": "admin" },
         { "name": "DB_SENHA",    "value": "DB_PASSWORD" },
-        { "name": "JWT_SEGREDO", "value": "JWT_SECRET" }
+        { "name": "JWT_SEGREDO",           "value": "JWT_SECRET" },
+        { "name": "CHAVE_INTERNA_SERVICO", "value": "INTERNAL_KEY" }
       ],
       "logConfiguration": {
         "logDriver": "awslogs",
