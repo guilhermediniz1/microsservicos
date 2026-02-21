@@ -7,6 +7,7 @@ on:
     paths:
       - 'servico-consultas/**'
       - '.github/workflows/deploy-consultas.yml'
+  workflow_dispatch:
 
 env:
   AWS_REGION:      us-east-1
