@@ -1,0 +1,18 @@
+{
+  "version": 0.0,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "<TASK_DEFINITION>",
+          "LoadBalancerInfo": {
+            "ContainerName": "servico-consultas",
+            "ContainerPort": 3003
+          },
+          "PlatformVersion": "LATEST"
+        }
+      }
+    }
+  ]
+}
